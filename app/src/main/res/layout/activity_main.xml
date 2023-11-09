@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/mujer"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="329dp"
+        android:layout_height="74dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="360dp">
+
+        <Button
+            android:id="@+id/btn_iniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="iniciar sesion" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="registro" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_usuario"
+        android:layout_width="313dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:text="usuario"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="167dp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="308dp"
+        android:layout_height="52dp"
+        android:text="contraseña"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="272dp" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="485dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="149dp"
+        android:layout_height="95dp"
+        app:srcCompat="@mipmap/gato"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <resources
+        android:id="@+id/resources"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="3dp">
+
+        <string name="app_name">AsyncTaskInicio</string>
+
+        <string name="et_usuario">Ingrese un usuario</string>
+
+        <string name="et_password">Ingrese una contraseña</string>
+
+        <string name="btn_inicio">Iniciar sesión</string>
+
+        <string name="descripcion">Descripción</string>
+    </resources>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
